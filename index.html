@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed Instagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="container cabecera">
+        <div class="row align-items-start contenido-cabecera">
+
+            <!-- logo -->
+            <div class="col">
+                <img class="caja" src="./assets/logoIG-crup.png">
+            </div>
+
+            <!-- ventana crear new post -->
+            <div class="col col-lg-2 cabecera ">
+                <button type="button" class="btn btn-success botones" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Create a new post</button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Caption</h6>
+                            <textarea class="form-control"
+                                aria-label="With textarea">Add the caption with your post here</textarea>
+                            <button style="font-size:18px"><i class="fa fa-camera"></i></button>
+
+                            <button style="font-size:18px"><i class="fa fa-map-marker"></i></button>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- botón ajustes -->
+            <div class="col col-lg-1 cabecera ">
+                <div class="dropdown">
+                    <button class="botones btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- Dropdown -->
+                        <i class="fa fa-gear" style="font-size:28px;"></i>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><button class="dropdown-item" type="button">Profile</button></li>
+                        <li><button class="dropdown-item" type="button">Accesibility</button></li>
+                        <li><button class="dropdown-item" type="button">Privacy and data</button></li>
+                        <hr>
+                        <li><button class="dropdown-item logout" type="button">Logout</button></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <!-- BOTONES VISTAS -->
+    <div class="container ">
+
+        <!--  --botón y enlace a vista cuadricula-- -->
+        <ul class="nav nav-pills mb-3 justify-content-md-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <span class="vistas" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"> <i
+                        class="material-icons">&#xe3ec;</i></span>
+            </li>
+
+            <!--  --botón y enlace a vista columna-- -->
+            <li class="nav-item" role="presentation">
+                <span class="vistas" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> <i
+                        style="font-size:24px" class="fa">&#xf0c8;</i></span>
+
+            </li>
+
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+
+            <!-- --contenido cuadricula-- -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col espacioFoto">
+                            <img class="photo img-fluid" src="./assets/Imagen1.png">
+                        </div>
+                        <div class="col espacioFoto">
+                            <img class="photo img-fluid" src="./assets/imagen2.png">
+                        </div>
+                        <div class="col espacioFoto">
+                            <img class="photo img-fluid" src="./assets/Imagen3.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col espacioFoto">
+                            <img class="photo img-fluid" src="./assets/imagen4.png">
+                        </div>
+                        <div class="col espacioFoto">
+                            <img class="photo img-fluid" src="./assets/imagen5_.png">
+                        </div>
+                        <div class="col espacioFoto">
+                            <img class="photo img-fluid" src="./assets/imagen6_.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col espacioFoto">
+                            <img class="photo img-fluid" src="./assets/imagen7.jpg">
+
+                        </div>
+                        <div class="col espacioFoto">
+                            <img class="photo img-fluid" src="./assets/imagen8.png">
+                        </div>
+                        <div class="col espacioFoto">
+                            <img class="photo img-fluid" src="./assets/imagen9.png">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --contenido columna-- -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <!-- Contenido de la columna -->
+
+                            <div class="card-container container-fluid">
+                                <div class="card-body header_prop">
+                                    <h5 class="card-title">Puente de Tablate</h5>
+                                    <h6 class="card-subtitle mb-4">17/07/2017</h6>
+                                </div>
+                                <img src="./assets/Imagen1.png" class="card-img-bottom" alt="...">
+                                <div class="card-body container-xl">
+                                    <p class="card-text textoFoto">
+                                        <strong>150 Likes</strong>
+                                        <br>
+                                        Es una construcción destinada a salvar el barranco al que ha dado nombre
+                                        —afluente del río Ízbor— en el camino real de Granada a La Alpujarra.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="card-container container-fluid">
+                                <div class="card-body header_prop">
+                                    <h5 class="card-title">Águila real</h5>
+                                    <h6 class="card-subtitle mb-4">30/10/2017</h6>
+                                </div>
+                                <img src="./assets/imagen2.png" class="card-img-bottom" alt="...">
+                                <div class="card-body container-xl">
+                                    <p class="card-text textoFoto">
+                                        <strong>150 Likes</strong>
+                                        <br>
+                                        Es una de las aves de presa más conocidas y ampliamente distribuidas de la
+                                        Tierra. Su área de distribución abarca gran parte de América del Norte, Eurasia
+                                        y el norte de África.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-container container-fluid">
+                                <div class="card-body header_prop">
+                                    <h5 class="card-title">Tormenta eléctrica</h5>
+                                    <h6 class="card-subtitle mb-4">01/12/2017</h6>
+                                </div>
+                                <img src="./assets/Imagen3.png" class="card-img-bottom" alt="...">
+                                <div class="card-body container-xl">
+                                    <p class="card-text textoFoto">
+                                        <strong>125 Likes</strong>
+                                        <br>
+                                        Es un fenómeno meteorológico caracterizado por la presencia de rayos y sus
+                                        efectos sonoros en la atmósfera terrestre denominados truenos.1​ El tipo de
+                                        nubes meteorológicas que caracterizan a las tormentas eléctricas son las
+                                        denominadas cumulonimbos
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-container container-fluid">
+                                <div class="card-body header_prop">
+                                    <h5 class="card-title">Libélula</h5>
+                                    <h6 class="card-subtitle mb-4">15/03/2018</h6>
+                                </div>
+                                <img src="./assets/imagen4.png" class="card-img-bottom" alt="...">
+                                <div class="card-body container-xl">
+                                    <p class="card-text textoFoto">
+                                        <strong>99 Likes</strong>
+                                        <br>
+                                        Se caracterizan por sus grandes ojos multifacetados, sus dos pares de fuertes
+                                        alas transparentes y por su abdomen alargado. Se alimentan de mosquitos y otros
+                                        pequeños insectos como moscas, abejas, mariposas y polillas.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-container container-fluid">
+                                <div class="card-body header_prop">
+                                    <h5 class="card-title">Vía Láctea</h5>
+                                    <h6 class="card-subtitle mb-4">30/06/2018</h6>
+                                </div>
+                                <img src="./assets/imagen5_.png" class="card-img-bottom" alt="...">
+                                <div class="card-body container-xl">
+                                    <p class="card-text textoFoto">
+                                        <strong>201 Likes</strong>
+                                        <br>
+                                        Su nombre proviene de la mitología romana, y esta de la griega, que significa en
+                                        latín
+                                        camino de leche. Esa es, en efecto, la apariencia de la tenue banda de luz que
+                                        atraviesa el firmamento terrestre, y así lo afirma la mitología griega.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-container container-fluid">
+                                <div class="card-body header_prop">
+                                    <h5 class="card-title">Cantábrico</h5>
+                                    <h6 class="card-subtitle mb-4">25/10/2018</h6>
+                                </div>
+                                <img src="./assets/imagen6_.png" class="card-img-bottom" alt="...">
+                                <div class="card-body container-xl">
+                                    <p class="card-text textoFoto">
+                                        <strong>111 Likes</strong>
+                                        <br>
+                                        El Cantábrico tiene una significativa amplitud de marea, pudiendo llegar a ser
+                                        de más de 5 m como máximo, especialmente durante los periodos de las grandes
+                                        mareas de septiembre-octubre y febrero-marzo.14​ Se experimentan dos tipos de
+                                        mareas: "mareas vivas" y "mareas muertas".
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-container container-fluid">
+                                <div class="card-body header_prop">
+                                    <h5 class="card-title">Toledo</h5>
+                                    <h6 class="card-subtitle mb-4">01/01/2019</h6>
+                                </div>
+                                <img src="./assets/imagen7.jpg" class="card-img-bottom" alt="...">
+                                <div class="card-body container-xl">
+                                    <p class="card-text textoFoto">
+                                        <strong>171 Likes</strong>
+                                        <br>
+                                        as temperaturas son frescas en invierno, con heladas frecuentes aunque menores
+                                        que en otras zonas de la región, y altas en verano, con máximas que superan
+                                        ocasionalmente los 40 °C. En 2007, Toledo fue la tercera ciudad más soleada de
+                                        España, con 3040 horas de sol
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-container container-fluid">
+                                <div class="card-body header_prop">
+                                    <h5 class="card-title">Primavera</h5>
+                                    <h6 class="card-subtitle mb-4">21/04/2018</h6>
+                                </div>
+                                <img src="./assets/imagen8.png" class="card-img-bottom" alt="...">
+                                <div class="card-body container-xl">
+                                    <p class="card-text textoFoto">
+                                        <strong>100 Likes</strong>
+                                        <br>
+                                        Los pétalos de la amapola son muy delicados y se marchitan rápidamente, por lo
+                                        que las flores
+                                        no puede usarse en adornos florales. Los estambres, de color negro, forman un
+                                        racimo anillado alrededor del gineceo, lo que le da el aspecto de botón negro
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-container container-fluid">
+                                <div class="card-body header_prop">
+                                    <h5 class="card-title">Noche de San Juan</h5>
+                                    <h6 class="card-subtitle mb-4">24/06/2018</h6>
+                                </div>
+                                <img src="./assets/imagen9.png" class="card-img-bottom" alt="...">
+                                <div class="card-body container-xl">
+                                    <p class="card-text textoFoto">
+                                        <strong>201 Likes</strong>
+                                        <br>
+                                        Es tradición en la Noche de San Juan encender una hoguera para pedir buenos
+                                        deseos bajo la luz de la luna llena, coincidiendo con el solsticio de verano.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+</body>
+
+</html>

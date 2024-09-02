@@ -1,0 +1,89 @@
+.cabecera{
+    height: 60px;
+}
+
+.contenido-cabecera{
+    display: flex;
+    background-color: rgb(244, 241, 241);
+}
+
+.caja{
+    display: flex;
+    width: 200px;
+    margin-top: 6px;
+}
+
+.botones{
+    margin-top: 8px;
+
+}
+
+.settings{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    margin-top: 300px;
+}
+
+.logout{
+    color: red;
+}
+
+.vistas :hover{
+    background-color: blue;
+}
+
+.espacioFoto{
+    width: 400px;
+    height: 400px;
+    border: black 2px solid;
+    margin: 6px;    
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;  
+    position: absolute;
+}
+
+.row>*{
+    padding: 0px !important;
+}
+
+.header_prop{
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-title{
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.card-subtitle{
+    font-size: 12px;
+}
+
+.textoFoto{
+    font-size: 12px;
+}
+
+.card-container {
+    height: auto;
+    border: grey 2px solid;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-bottom: 6px;
+}
+
+
+
+
+
+
